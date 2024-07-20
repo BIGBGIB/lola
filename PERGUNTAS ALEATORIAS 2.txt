@@ -1,0 +1,47 @@
+let genero = prompt('Informe seu genero:');
+let nome = prompt('Informe seu nome:');
+let palavradeboasvindas = genero == 'masculino'? 'vindo' : 'vinda';
+console.log (`Seja bem-${palavradeboasvindas} ${nome}!`);
+////////////////////////////////////////////////////////////////////
+let valor1 = parseInt(Math.random() * 10 + 1);
+console.log (`Valor1: ${valor1}`);
+let valor2 = parseInt(Math.random() * 10 + 1);
+console.log (`Valor2: ${valor2}`);
+let soma = valor1 + valor2;
+console.log (`Soma: ${soma}`);
+let subtracao = valor1 - valor2;
+console.log (`Subtracao: ${subtracao}`);
+////////////////////////////////////////////////////////////////////
+let idade = parseInt(Math.random() * 100 + 1);
+console.log(`Idade = ${idade}`);
+
+if (idade < 18) {
+    console.log ('MENOR DE IDADE');
+} else if(idade > 60) {
+    console.log ('IDOSO');
+} else {
+    console.log ('MAIOR DE IDADE');
+}
+///////////////////////////////////////////////////////////////////
+if (subtracao < 0) {
+    console.log (`${subtracao} é um numero Negativo`);
+} else if(subtracao > 0) {
+    console.log (`${subtracao} é um numero Positivo`);
+} else {
+    console.log (`${subtracao} é um numero Neutro`);
+}
+///////////////////////////////////////////////////////////////////
+let x = 0;
+while (x < 10) {
+    x ++;
+    console.log (`Valor de X: ${x}`);
+}
+///////////////////////////////////////////////////////////////////
+let nota = parseInt(Math.random() * 10 + 1);
+console.log(`Nota = ${nota}`);
+
+if (nota >= 7) {
+    console.log ('APROVADO');
+} else {
+    console.log ('REPROVADO');
+} 

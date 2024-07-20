@@ -1,0 +1,70 @@
+alert("Bem vindo ao questionario aleatorio");
+let Nome = prompt("Informe seu nome");
+console.log(Nome);
+alert(`Bem vindo ${Nome}`);
+
+let Diadasemana = prompt("Que dia da semana é hoje");
+console.log(Diadasemana);
+
+if (Diadasemana == 'sabado' || Diadasemana == 'domingo') {
+    alert(`Bom final de semana ${Nome}`);
+} else {
+    alert(`Boa Semana ${Nome}`);
+}
+
+let numero = prompt("Digite um numero, seja positivo ou negativo");
+console.log(numero);
+
+if (numero >= 0) {
+    alert(`${numero} é um numero POSITIVO`);
+} else {
+    alert(`${numero} é um numero NEGATIVO`);
+}
+/////////////////////////////////////
+alert("Hora do jogo das perguntas!");
+let PontuacaoTotal = 0;
+ 
+    let A = prompt("Qual o nome do cachorro mais lindo do mundo?");
+    if (A == 'lola') {
+        alert(`CERTA RESPOSTA!`);
+        PontuacaoTotal += 50;
+    
+    
+    } else {
+        alert(`RESPOSTA INCORRETA :(`);
+    }  
+    
+    let B = prompt("Qual o nome do miudo mais lindo do planeta?");
+    console.log(B);
+    
+    if (B == 'gabriel') {
+        alert(`CERTA RESPOSTA!`);
+        PontuacaoTotal += 50;
+       
+    
+    } else {
+        alert(`RESPOSTA INCORRETA :(`);
+    }
+    
+    let C = prompt("Chocolate ou Banana?");
+    console.log(C);
+    
+    if (C == 'chocolate') {
+        alert(`CERTA RESPOSTA!`);
+        PontuacaoTotal += 50;
+    
+        
+    } else {
+        alert(`RESPOSTA INCORRETA :(`);
+    }
+ 
+   
+ 
+if (PontuacaoTotal >= 100) {
+    alert(`Sua pontuação total foi: ${PontuacaoTotal} Você GANHOU!`);
+} else {
+    alert(`Sua pontuação total foi: ${PontuacaoTotal} Você PERDEU!`);
+}
+
+let Saldo = prompt("Quanto você tem sua conta?");
+alert( `Você tem ${Saldo}`);

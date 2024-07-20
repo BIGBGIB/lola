@@ -1,0 +1,95 @@
+let titulo = document.querySelector('h1');
+titulo.innerHTML = 'Hora do desafio';
+let cidade;
+let primeiroNumero;
+let segundoNumero;
+let nome;
+let numeroEscolhido;
+let resultadoDobro;
+let numero1;
+let numero2;
+let numero3;
+let resultadoMedia;
+let resultadoNumeroMaior;
+let soma;
+let resultadomultiplicar;
+
+function olaMundo () {
+    console.log('Olá mundo!');
+}
+
+olaMundo();
+
+function seuNome () {
+    nome = prompt('Digite seu nome:');
+     alert(`Olá ${nome}!`);
+}
+
+seuNome();
+
+function verificarConsole() {
+    console.log('O botão foi clicado!');
+}
+
+function verificarAlerta() {
+    alert('Eu amo JS');
+}
+
+function verificarPrompt() {
+    cidade = prompt('Digite o nome de uma cidade do Brasil:');
+    alert(`Estive em ${cidade} e lembrei de você`);
+}
+
+function verificarSoma(a, b) {
+   return a + b;
+}
+
+alert('Escolha dois numero inteiros');
+   primeiroNumero = parseInt(prompt('Digite o primeiro numero inteiro:'));
+   console.log(primeiroNumero);
+   segundoNumero = parseInt(prompt('Digite o segundo numero inteiro:'));
+   console.log(segundoNumero);
+   soma = verificarSoma(primeiroNumero, segundoNumero);
+   console.log(`A soma dos dois numeros é igual a ${soma}`);
+  
+function dobroDoNumeroEscolhido(numero) {
+    return numero * 2;
+}
+  
+  numeroEscolhido = prompt('Digite um numero inteiro:');
+  console.log(numeroEscolhido);
+  resultadoDobro = dobroDoNumeroEscolhido(numeroEscolhido);
+  console.log(`O dobro do numero escolhido é igual a ${resultadoDobro}`);
+
+function media(a, b, c) {
+    return (a + b + c) / 3;
+}
+
+  alert('Escolha 3 numeros inteiros');
+  numero1 = parseInt(prompt('Digite o primeiro numero inteiro:'));
+  console.log(numero1);
+  numero2 = parseInt(prompt('Digite o segundo numero inteiro:'));
+  console.log(numero2);
+  numero3 = parseInt(prompt('Digite o terceiro numero inteiro:'));
+  console.log(numero3);
+  resultadoMedia = parseInt(media(numero1, numero2, numero3));
+  console.log(`A media dos 3 numeros escolhidos é igual a ${resultadoMedia}`);
+
+function numeroMaior (a, b) {
+     if (a > b) {
+        return console.log(`O maior numero entre a media e o dobro é ${a}`);
+     } else if (a === b){
+        return console.log('A media é igual ao dobro');
+     } else {
+        return console.log(`O maior numero entre a media e o dobro é ${b}`);
+     }
+}
+
+  resultadoNumeroMaior = numeroMaior(resultadoMedia, resultadoDobro);
+
+function multiplicar (numero) {
+    return numero * numero;
+}
+
+resultadomultiplicar = multiplicar(soma);
+console.log(`O valor da soma multiplicado por ele mesmo é igual a ${resultadomultiplicar}`);
